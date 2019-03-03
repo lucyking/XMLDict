@@ -11,7 +11,7 @@ int main() {
     printf("%s", streamer.CStr());
 
 //    XMLElement* titleElement = doc->FirstChildElement("PLAY")->FirstChildElement("TITLE");
-//    recurseXML(doc);
+    recurseXML(doc);
 
     std::cout << "Hello, World!" << std::endl;
     return 0;
@@ -25,6 +25,6 @@ bool recurseXML(tinyxml2::XMLDocument &doc)
     {
         std::cout << "HIT" << std::endl;
         const  char* title = titleElement->GetText();
-//        std::cout << *title  << std::endl;
+        std::cout << title  << std::endl;
     }
 }
